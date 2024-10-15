@@ -1,0 +1,72 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for instructions */
+div {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* File input styles */
+input[type="file"] {
+    margin: 10px 0;
+}
+
+/* Image display styles */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Canvas container styles */
+#canvas {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* Range input styles */
+input[type="range"] {
+    width: 82%;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Label for range input */
+#input-value {
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 2em;
+    color: #c78;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    div {
+        padding: 10px;
+    }
+}

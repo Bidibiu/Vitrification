@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="tang" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<title>图片底色转透明像素Vitrification</title>
+
+	<link rel="stylesheet" type="text/css" href="Vitrification.css" />
+</head>
+<body>
+	<div>
+		<p>使用说明：</p>
+		<ol>
+			<li>点击“选择文件”按钮，上传您想要处理的图片。</li>
+			<li>调整下方滑块以设置图片的透明度（-1为完全透明，255为完全不透明）。</li>
+			<li>满意后，右键点击图片，选择“另存为”保存为 PNG 格式。</li>
+		</ol>
+		<p>支持常见图片格式，如 JPG 和 PNG。</p>
+	</div>
+	
+	<div>
+		<input id="file" type="file" />
+	</div>
+	<div>
+		<img id="img" />
+	</div>
+	<div id="canvas"></div>
+	<div>
+		-1<input id="input" type="range" min=-1 max=255 step=1 value=255 />255<span id="input-value" style="margin-left: 2em; color: #c78;">255</span>
+	</div>
+
+	<div style="text-align: center; margin-top: 20px;">
+		如果对你有用，请在 GitHub 上给我点个 star。<br>
+		If you find it useful, please give me a star on GitHub.<br>
+		<a href="https://github.com/Bidibiu" target="_blank">访问我的 GitHub 项目<br>Access my GitHub project.
+		</a>
+	</div>
+	
+	<script type="text/javascript" src="utils.js"></script>
+	<script type="text/javascript" src="Vitrification.js" ></script>
+</body>
+</html>
